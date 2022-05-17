@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="5dp"
-    android:background="@drawable/khung2"
+    android:background="@drawable/khung"
     tools:context=".MainActivity">
 
 
     <LinearLayout
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
-        android:background="#172750"
+        android:background="#3B71F8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
@@ -29,6 +29,7 @@
             android:text="CHỌN CHỦ ĐỀ" />
 
         <Button
+            android:onClick="xulyThoat"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:background="@drawable/khung"
@@ -50,17 +51,17 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="10dp"
-            android:layout_height="135dp"
             android:layout_weight="1"
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/h1" />
 
         <ImageView
+            android:layout_weight="1"
             android:id="@+id/imageView2"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/h2" />
     </LinearLayout>
     <LinearLayout
